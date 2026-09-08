@@ -1,0 +1,19 @@
+- type: entity
+  parent: [ WeaponChargedStaffBase ]
+  id: WeaponChargedStaffWizardApprentice
+  name: apprentice-wizard practice staff
+  components:
+  - type: ProjectileBatteryAmmoProvider
+    proto: NFBulletDisabler
+    fireCost: 40
+  - type: Sprite
+    sprite: _WF/Objects/Weapons/apprentice_staves.rsi
+    layers:
+    - state: base
+  - type: Item
+    sprite: _WF/Objects/Weapons/apprentice_staves.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
