@@ -1,0 +1,19 @@
+- type: constructionGraph
+  id: CraftGraphWeaponChargedStaffWizardApprentice
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: FinishWeaponChargedStaffWizardApprentice
+      steps:
+      - tag: Flare
+        name: construction-graph-tag-flare
+        icon:
+          sprite: Objects/Misc/flare.rsi
+          state: icon
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+        doAfter: 0.5
+  - node: FinishWeaponChargedStaffWizardApprentice
+    entity: WeaponChargedStaffWizardApprentice
