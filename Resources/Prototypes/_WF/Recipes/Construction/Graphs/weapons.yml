@@ -6,12 +6,15 @@
     edges:
     - to: FinishWeaponChargedStaffWizardApprentice
       steps:
-      - tag: Flare
-        name: construction-graph-tag-flare
+      - tag: CrystalShard
+        name: Crystal Shard
         icon:
-          sprite: Objects/Misc/flare.rsi
-          state: icon
+          sprite: Objects/Materials/Shards/crystal.rsi
+          state: shard1
         doAfter: 1
+      - material: WoodPlank
+        amount: 5
+        doAfter: 5
       - material: Cloth
         amount: 1
         doAfter: 0.5

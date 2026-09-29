@@ -2,12 +2,16 @@
   parent: [ WeaponChargedStaffBase, WeaponInertStaffBase ]
   id: WeaponChargedStaffWizardApprentice
   name: apprentice-wizard practice staff
+  description: The best place to get a start in your esoteric career!
   components:
   - type: Sprite
     sprite: _WF/Objects/Weapons/apprentice_staves.rsi
     layers:
     - state: base
   - type: Item
+    size: Normal
+    shape:
+      - 0,0,4,0
     sprite: _WF/Objects/Weapons/apprentice_staves.rsi
     inhandVisuals:
       left:
@@ -27,5 +31,13 @@
       fireCost: 60
       name: kill
       state: lethal
+  - type: Clothing
+    quickEquip: false
+    sprite: _WF/Objects/Weapons/apprentice_staves.rsi
+    slots:
+    - Back
+    - SuitStorage
   - type: Construction
     graph: CraftGraphWeaponChargedStaffWizardApprentice
+    node: FinishWeaponChargedStaffWizardApprentice
+    deconstructionTarget: null
