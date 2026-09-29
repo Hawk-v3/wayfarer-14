@@ -18,6 +18,9 @@
       - state: inhand-left
       right:
       - state: inhand-right
+  - type: Battery
+    maxCharge: 800
+    startingCharge: 0
   - type: ProjectileBatteryAmmoProvider
     proto: NFBulletLaserLow
     fireCost: 60
